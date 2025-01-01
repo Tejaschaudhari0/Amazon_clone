@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon.com Clone</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+
+    <link rel="icon" href="Images/My-logo.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="Images/My-logo.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="Images/My-logo.png" sizes="64x64" type="image/png">
+    <link rel="icon" href="Images/My-logo.png" sizes="192x192" type="image/png">
+    <link rel="apple-touch-icon" href="Images/My-logo.png" sizes="180x180">
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+
+            <div class="amazon-logo border">
+              <img class="logo"  src="images/amazon-logo.png" alt="logo">
+            </div>
+
+            <div class="nav-location">
+                <div class="location border">
+                    <div class="icon ">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                        <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                        <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        </svg>
+                    </div>
+                    <div class="loc-info">
+                      <p class="text1">Deliver To</p>
+                      <p class="text2"><b>India</b></p> 
+                    </div>
+                    
+                </div>            
+            </div> 
+
+            <div class="search-bar">
+                    <select class="search-select">
+                        <option>All</option>
+                    </select>
+                    <input placeholder="Search Amazon" class="search-input">
+                    <div class="search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"     fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                          </svg>
+                    </div>                
+            </div>
+
+            <div class="nav-lang border">
+                <select class="language">
+                    <option>EN</option>
+                </select>
+            </div>
+
+            <div class="nav-sign  border">
+                <div class="sign">
+                    <p class="text3">Hello,sign in</p>
+                   <div class="list">
+                       <p class="text4">Account & Lists</p>
+                       <select class="object">
+                          <object></object>
+                          </select>
+                   </div>
+                </div>
+                
+            </div>
+
+            <div class="nav-return border">
+                <p class="text5">Returns</p>
+                <p class="text6">& Orders</p>
+            </div>
+
+            <div class="nav-cart border">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="cart">Cart</span>
+            </div>
+
+
+        </div>
+
+        <div class="navbar2">
+            <div class="menu border">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+            <div class="offers">
+                <p class="border">Today's Deals </p>
+                <p class="border">Customer Service</p>
+                <p class="border">Register</p>
+                <p class="border">Gift Cards</p>
+                <p class="border">Sell</p>
+            </div>
+        </div>
+
+        <div class="main-panel">
+          <img src="Images/amazon-main2.png" alt="Page Background" class="background-img">
+          <div class="panel-info">
+              <div class="amazon-info">
+                <p>
+                  You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. 
+                  <a href="#">Click here to go to amazon.in</a>
+                </p>
+              </div>
+          </div>
+        </div>
+      
+      
+
+        <div class="shopping-content">
+            <div class="shop-info">
+
+                <div class="box1 box">  <!--line 1 box 1 --> 
+                    <h3>Small gifts under $20</h3>
+                    <img class="box-img1" src="Images/box_1.jpg" alt="image">
+                    <span> Shop now</span>
+                </div>
+
+                <div class="box2 box">   <!--line 1 box 2 --> 
+                    <h3>Most-loved watches</h3>
+                    <div class="item-category">
+                        <div class="category-item">
+                          <img src="Images/box_1.1.jpg" alt="Women Watch">
+                          <p class="category-name">Women</p>
+                        </div>
+                        <div class="category-item">
+                          <img src="Images/box_1.2.jpg" alt="Men Watch">
+                          <p class="category-name">Men</p>
+                        </div>
+                      </div>                
+                      <div class="item-category">
+                        <div class="category-item">
+                          <img src="Images/box_1.3.jpg" alt="Girls Watch">
+                          <p class="category-name">Girls</p>
+                        </div>
+                        <div class="category-item">
+                          <img src="Images/box_1.4.jpg" alt="Boys Watch">
+                          <p class="category-name">Boys</p>
+                        </div>
+                      </div>
+                      <br>
+                    <span> Discover more</span>
+                </div>
+
+                <div class="box2 box">     <!--line 1 box 3 --> 
+                    <h3>Most-loved travel essentials</h3>
+                    <div class="item-category">
+                        <div class="category-item">
+                          <img src="Images/box_2.1.jpg" alt="Women Watch">
+                          <p class="category-name">Backpacks</p>
+                        </div>
+                        <div class="category-item">
+                          <img src="Images/box_2.2.jpg" alt="Men Watch">
+                          <p class="category-name">Suitcases</p>
+                        </div>
+                      </div>                
+                      <div class="item-category">
+                        <div class="category-item">
+                          <img src="Images/box_2.3.jpg" alt="Girls Watch">
+                          <p class="category-name">Accessories</p>
+                        </div>
+                        <div class="category-item">
+                          <img src="Images/box_2.4.jpg" alt="Boys Watch">
+                          <p class="category-name">Handbags</p>
+                        </div>
+                      </div>
+                      <br>
+                    <span> Discover more</span>
+                </div>
+                
+                <div class="box2 box">     <!--line 1 box 4 --> 
+                    <h3>Level up your beauty routine</h3>
+                    <div class="item-category">
+                        <div class="category-item">
+                          <img src="Images/box_3.1.jpg" alt="Women Watch">
+                          <p class="category-name">Mekeup</p>
+                        </div>
+                        <div class="category-item">
+                          <img src="Images/box_3.2.jpg" alt="Men Watch">
+                          <p class="category-name">Brushes</p>
+                        </div>
+                      </div>                
+                      <div class="item-category">
+                        <div class="category-item">
+                          <img src="Images/box_3.3.jpg" alt="Girls Watch">
+                          <p class="category-name">Sponges</p>
+                        </div>
+                        <div class="category-item">
+                          <img src="Images/box_3.4.jpg" alt="Boys Watch">
+                          <p class="category-name">Mirrors</p>
+                        </div>
+                      </div>
+                      <br>
+                    <span>See more</span>
+                </div>
+            </div> 
+    
+            
+            <div class="shop-info2">
+                <div class="box2 box">     <!--line 2 box 1 --> 
+                    <h3>New home arrivals under $50</h3>
+                    <div class="item-category">
+                        <div class="category-item">
+                          <img src="Images/box-line2_1.1.jpg" alt="Women Watch">
+                          <p class="category-name">Kitchen & dining</p>
+                        </div>
+                        <div class="category-item">
+                          <img src="Images/box-line2_1.2.jpg" alt="Men Watch">
+                          <p class="category-name">Home improvement</p>
+                        </div>
+                      </div>                
+                      <div class="item-category">
+                        <div class="category-item">
+                          <img src="Images/box-line2_1.3.jpg" alt="Girls Watch">
+                          <p class="category-name">Decor</p>
+                        </div>
+                        <div class="category-item">
+                          <img src="Images/box-line2_1.4.jpg" alt="Boys Watch">
+                          <p class="category-name">Bedding & bath</p>
+                        </div>
+                      </div>
+                      <br>
+                    <span> Shop the latest from Home</span>
+                </div>
+
+                <div class="box1 box">   <!--line 2 box 2 -->
+                    <h3>Deals in PCs</h3>
+                    <img class="box-img1" src="Images/box-line2_2.jpg" alt="image">
+                    <span> Shop now</span>
+                </div>
+
+                <div class="box1 box">    <!--line 2 box 3 -->
+                    <h3>Get your game on</h3>
+                    <img class="box-img1" src="Images/box-line2_3.jpg" alt="image">
+                    <span> Shop gaming</span>
+                </div>
+
+                <div class="box1 box">     <!--line 2 box 4 --> 
+                    <h3>New home arrivals under $50</h3>
+                    <div class="item-category">
+                        <div class="category-item">
+                          <img src="Images/box-line2_4.1.jpg" alt="Women Watch">
+                          <p class="category-name">Desktops</p>
+                        </div>
+                        <div class="category-item">
+                          <img src="Images/box-line2_4.2.jpg" alt="Men Watch">
+                          <p class="category-name">Laptops</p>
+                        </div>
+                      </div>                
+                      <div class="item-category">
+                        <div class="category-item">
+                          <img src="Images/box-line2_4.3.jpg" alt="Girls Watch">
+                          <p class="category-name">Hard Drives</p>
+                        </div>
+                        <div class="category-item">
+                          <img src="Images/box-line2_4.4.jpg" alt="Boys Watch">
+                          <p class="category-name">PC Accessories</p>
+                        </div>
+                      </div>
+                      <br>
+                    <span>See more</span>
+                </div>
+            </div>
+
+
+        </div>
+
+    </header>
+
+    <footer>
+
+        <div class="nav-footer">  <!-- panel 1 -->
+            <span><a href="#" style="text-decoration: none;">Back to top</a></span>
+
+        </div>
+
+  
+        <div class="nav-footerlinkcol">   <!-- panel 2 -->
+            <div class="link-info">
+              <div class="link">
+                <ul>
+                    <p>Get to Know Us</p>
+                    <a href="#">Careers</a>
+                    <a href="#">Blog</a>
+                    <a href="#">About Amazon</a>
+                    <a href="#">Investor Relations</a>
+                    <a href="#">Amazon Devices</a>
+                    <a href="#">Amazon Science</a>
+
+                </ul> 
+            </div>
+
+            <div class="link">
+                <ul>
+                    <p>Make Money with Us</p>
+                    <a href="#">Sell products on Amazon</a>
+                    <a href="#">Sell on Amazon Business</a>
+                    <a href="#">Sell apps on Amazon</a>
+                    <a href="#">Advertise Your Products</a>
+                    <a href="#">Self-Publish with Us</a>
+                    <a href="#">Host an Amazon Hub</a>
+                    <a href="#">›See More Make Money with Us</a>
+
+                </ul>
+            </div>
+            </div> 
+            
+            <div class="link-info">
+              <div class="link">
+                <ul>
+                    <p>Amazon Payment Product</p>
+                    <a href="#">Amazon Business Card</a>
+                    <a href="#">Shop with Points</a>
+                    <a href="#">Reload Your Balance</a>
+                    <a href="#">Amazon Currency Converter</a>
+                </ul>
+            </div>
+
+            <div class="link">
+                <ul>
+                    <p>Let Us Help You</p>
+                    <a href="#">Amazon and COVID-19</a>
+                    <a href="#">Your Account</a>
+                    <a href="#">Your Orders</a>
+                    <a href="#">Shipping Rates & Policies</a>
+                    <a href="#">Returns & Replacements</a>
+                    <a href="#">Manage Your Content and Devices</a>
+                    <a href="#">Help</a>
+                </ul>
+            </div>
+        
+            </div>
+        </div>
+
+        <div class="nav-footerline">    <!-- panel 3 -->
+
+            <img src="Images/amazon-logo.png" alt="amazon">
+            <div class="nav-footerinfo">
+                <div class="nav-footer-lang">
+                    <i class="fa-solid fa-globe">
+                        <select class="footer-lang">
+                            <option>language</option>
+                        </select>                
+                    </i>
+                </div>
+                
+                <div class="nav-footer-currency">
+                    <i class="fa-solid fa-dollar-sign">
+                        <button class="footer-currency">USD-U.S.Dollar</button>     
+                    </i>
+                </div>
+    
+                <div class="nav-footer-region">
+                    <i class="fa-solid fa-flag-usa"></i>
+                        <button class="footer-region">United States</button>     
+                    </i>
+                </div>
+            </div>
+
+
+        </div>    
+
+        <div class="navfooterlast">
+            <div class="navfooterlast1">
+                <a>Conditions of Use</a>
+                <a>Privacy Notice</a>
+                <a>Consumer Health Data Privacy Disclosure</a>
+                <a>Your Ads Privacy Choices</a> 
+            </div>  
+            <br>
+            <div class="navfooterlast2">
+                <p>© 1996-2024, Amazon.com, Inc. or its affiliates</p>
+            </div> 
+        </div>
+
+
+
+
+
+    </footer>
+
+
+
+</body>
+</html>

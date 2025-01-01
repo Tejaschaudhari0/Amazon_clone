@@ -1,0 +1,977 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: #00441f;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* amazon logo code */
+
+.amazon-info {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo {
+    max-height: 50px;
+}
+
+.border{
+    border: 1px solid transparent;
+}
+
+.border:hover{
+    border: 1px solid white;
+}
+
+@media (max-width: 480px) {
+    .amazon-info {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .logo {
+        max-height: 30px;
+    }
+
+}
+@media (max-width: 324px) {
+    .amazon-info {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .logo {
+        max-height: 25px;
+    }
+
+}
+
+
+/* navbar Box 2 */
+
+.nav-location {
+    width: 7rem;
+    border: 1px solid transparent;
+    margin: 0 0.5rem;
+    display: flex;
+    flex-direction: column; /* Stack content vertically on small screens */
+    align-items: flex-start; /* Align text and icon properly */
+}
+
+.nav-location:hover{
+    cursor: pointer;
+}
+.location {
+    display: flex;
+    align-items: center; /* Vertically align icon and text */
+    gap: 5px; /* Add space between icon and text */
+}
+
+.location .icon {
+    padding-top: 0.8rem;
+    font-size: 1.2rem; /* Adjust icon size for better visibility */
+}
+
+.text1 {
+    font-size: 0.75rem;
+    color: #cccccc;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.text2 {
+    margin-left: 1px;
+    font-size: 0.9rem; /* Slightly larger for better readability */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-location {
+        width: 6rem; /* Adjust width for smaller screens */
+        margin: 0 0.3rem; /* Reduce margin for compact layout */
+    }
+
+    .location {
+        flex-direction: row; /* Keep icon and text inline */
+        gap: 3px; /* Adjust gap for compact look */
+    }
+
+    .location .icon {
+        padding-top: 0.5rem; /* Reduce padding for smaller screens */
+        font-size: 1rem; /* Smaller icon for better proportions */
+    }
+
+    .text1 {
+        font-size: 0.7rem; /* Reduce font size slightly */
+    }
+
+    .text2 {
+        font-size: 0.8rem; /* Match overall compact design */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-location {
+        width: auto; /* Allow flexible width */
+        margin: 0 0.2rem;
+    }
+
+    .location .icon {
+        padding: 0; /* Remove padding for better fit */
+        font-size: 0.7rem; /* Smaller icon size for mobile */
+    }
+
+    .text1, .text2 {
+        font-size: 0.5rem; /* Compact text size for mobile */
+    }
+
+    .text2 {
+        margin-left: 0; /* Remove unnecessary margin */
+    }
+}
+
+
+
+    
+
+
+/* navbar Box 3 */
+
+.search-bar {
+    background-color: rgb(158, 6, 127);
+    width: 900px;
+    height: 40px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-evenly;
+    transition: border 0.3s ease; /* Smooth transition for border change */
+}
+
+.search-select {
+    width: 50px;
+    height: 40px;
+    border: none;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    text-align: center;
+    background-color: #E6E6E6;
+}
+
+.search {
+    width: 50px;
+    border: none;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+    text-align: center;
+    align-content: center;
+}
+
+.search-input {
+    width: 100%;
+    font-size: 1rem;
+    border: none; /* Remove default input border */
+    outline: none; /* Remove input outline on focus */
+}
+
+/* Hover effect for the search bar */
+.search-bar:hover {
+    border: 2px solid pink;
+}
+
+/* Focus effect for the search bar */
+.search-bar:focus-within {
+    border: 3px solid rgb(250, 140, 197);
+}
+
+/* Optional: Remove border highlight when selecting text inside the input */
+.search-bar .search-input::selection {
+    background: lightpink;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .search-bar {
+        width: 700px; /* Reduce width for smaller screens */
+    }
+
+    .search-select {
+        width: 60px; /* Slightly narrower */
+    }
+
+    .search {
+        width: 40px;
+    }
+
+    .search-input {
+        font-size: 0.9rem; /* Adjust font size */
+    }
+}
+@media (max-width: 769px) {
+
+    .navbar{
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: space-evenly;
+    }
+    .search-bar {
+        width: 100%; /* Reduce width for smaller screens */
+        height: 35px;
+        order: 7;
+        margin: 5px 10px 10px;
+    }
+
+    .search-select {
+        width: 50px; /* Slightly narrower */
+        height: 35px;
+    }
+
+    .search {
+        width: 35px;
+    }
+
+    .search-input {
+        font-size: 0.7rem; /* Adjust font size */
+    }
+}
+@media (max-width: 490px) {
+    .search-bar {
+        width: 600px; /* Reduce width for smaller screens */
+        height: 30px;
+    }
+
+
+    .search-select {
+        width: 40px; /* Slightly narrower */
+        height: 30px;
+    }
+
+    .search {
+        width: 30px;
+    }
+
+    .search-input {
+        font-size: 0.5rem; /* Adjust font size */
+    }
+}
+
+
+
+/* navbar Box 4 */
+
+.nav-lang{
+    width: 60px;
+    height: 35px;
+    background-color: #00441f ;
+}
+.language{
+    background-color: #00441f;
+    color: white;
+    width: 60px;
+    height: 35px;
+    text-align: end;
+    border: none;
+}
+
+@media (max-width: 490px){
+    .nav-lang{
+        width: 40px;
+        height: 27px;
+    }
+    .language{
+        width: 40px;
+        height: 27px;
+    }
+    
+
+}
+
+
+/* navbar Box 5 */
+
+.nav-sign{
+    border: 1px solid transparent;
+  
+}
+
+.list{
+    display: flex;
+}
+.text3{
+    font-size: 12px;
+}
+
+.text4{
+    font-size: 14px;  
+    font-weight: 700; 
+}
+.object {
+    background-color: #00441f;
+    border: none;
+    color: white;
+}
+
+
+/* navbar Box 6 */
+
+.nav-return{
+    border: 1px solid transparent;
+}
+
+.text5{
+    font-size: 12px;
+}
+
+.text6{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* navbar Box 7 */
+
+
+.nav-cart {
+    border: 1px solid transparent;
+    font-weight: 700;
+}
+.nav-cart i{
+    font-size: 30px;
+}
+
+@media (max-width:1224px) {
+    .nav-cart .cart{
+        display: none;
+    }
+    .text3{
+        font-size: 10px;
+    }
+    
+    .text4{
+        font-size: 12px;  
+    }
+    .text5{
+        font-size: 10px;
+    }
+    
+    .text6{
+        font-size: 12px;
+    }
+    .nav-cart i{
+        font-size: 30px;
+    }
+
+    
+}
+
+@media (max-width: 490px){
+    .text3{
+        font-size: 7px;
+    }
+    
+    .text4{
+        font-size: 9px;  
+    }
+    .text5{
+        font-size: 7px;
+    }
+    
+    .text6{
+        font-size: 9px;
+    }
+    .nav-cart i{
+        font-size: 17px;
+    }
+
+}
+
+/* Next 2nd navbar Panel */
+
+.navbar2 {
+    height: 38px;
+    display: flex;
+    background-color: #14703e;
+    color: white;
+    align-items: center;
+    font-weight: 700;
+}
+
+.menu {
+    width: 60px;
+    height: 37px;
+    margin-left: 35px;
+    font-size: 18px;
+    align-items: center;
+    align-content: center;
+}
+
+/* Main container for offers */
+.offers {
+    display: flex; /* Align p elements horizontally */
+    gap: 10px; /* Add some space between items */
+    width: 100%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent text from wrapping */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+/* Styling for the p elements */
+.offers p {
+    font-size: 0.9rem;
+    padding: 0 10px;
+    margin: 0;
+    white-space: nowrap; /* Prevent the text from wrapping */
+    overflow-wrap: break-word; /* Ensure no breaking words */
+    text-align: center; /* Center the text */
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 500px) {
+    .menu {
+        width: 30px; /* Adjust menu size for smaller screens */
+        height: 15px;
+        font-size: 10px;
+        margin-left: 2px;
+    }
+    
+    .offers {
+        overflow-x: auto; /* Enable horizontal scrolling */
+        scrollbar-width: none; /* Hide scrollbar for Firefox */
+    }
+
+    .offers p {
+        font-size: 0.83rem; /* Adjust font size on smaller screens */
+        padding: 0 5px; /* Reduced padding */
+    }
+}
+
+/* For Webkit browsers (Chrome, Safari, Edge) */
+.offers::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Webkit browsers */
+}
+
+
+/* Main panel */
+.main-panel {
+    position: relative;
+    width: 100%;
+    height: auto; /* Remove the fixed height to make it dynamic */
+    overflow: hidden; /* Prevent overflow of the image */
+}
+
+.main-panel img {
+    width: 100%; /* Make the image span the full width */
+    height: 100%; /* Make the image span the full height */
+    object-fit: cover; /* Ensure the image covers the entire area */
+    display: block; /* Prevent extra spacing caused by inline elements */
+}
+
+
+@media (max-width: 768px) {
+    .main-panel {
+        height: 250px; /* Set a lower height for mobile/tablet screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .main-panel {
+        height: 200px; /* Adjust further for smaller screens */
+    }
+}
+
+/* Amazon info section */
+/* Main Panel Info */
+.panel-info {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    position: absolute; /* Position within .main-panel */
+    bottom: 10px; /* Adjust to stay at the bottom of the panel */
+    width: 100%; /* Stretch across the full width */
+    padding: 0 1rem; /* Add horizontal padding */
+    box-sizing: border-box; /* Include padding in total width/height */
+}
+
+.amazon-info {
+    width: 100%; /* Use a flexible width for responsiveness */
+    line-height: 10px;
+    padding: 10px 10px; /* Add padding for text spacing */
+    background-color: white; /* Ensure visibility over the image */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    box-sizing: border-box;
+}
+
+.amazon-info p {
+    font-size: 1rem; /* Base font size */
+    margin: 0;
+    color: #333; /* Neutral color for readability */
+}
+
+.amazon-info a {
+    text-decoration: none;
+    color: #007185; /* Amazon theme color */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+.amazon-info a:hover {
+    color: #ff9900; /* Change to a brighter color on hover */
+}
+
+/* Responsive font size for smaller screens */
+@media (max-width: 1050px) {
+    .amazon-info p {
+        font-size: 0.9rem; /* Slightly smaller font on medium screens */
+    }
+}
+@media (max-width: 968px) {
+    .amazon-info p {
+        font-size: 0.75rem; /* Smaller font size for tablets */
+    }
+}
+
+@media (max-width: 795px) {
+    .amazon-info p {
+        font-size: 0.65rem; /* Smaller font size for tablets */
+    }
+}
+@media (max-width: 699px) {
+    .amazon-info p {
+        font-size: 0.5rem; /* Smaller font size for tablets */
+    }
+
+}
+
+@media (max-width: 550px) {
+    .amazon-info p {
+        font-size: 0.45rem; /* Smaller font size for mobile screens */
+    }
+}
+
+
+
+/* shop section */   
+
+.shopping-content {
+    background-color: rgb(228, 244, 230);
+    padding: 20px;
+}
+
+.shop-info, .shop-info2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+    gap: 20px; /* Add spacing between items */
+}
+
+.box {
+    margin-top: 20px;
+    height: auto; /* Allow flexible height for responsiveness */
+    width: 100%;
+    max-width: 350px; /* Ensure max width for larger screens */
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    border-radius: 8px; /* Add rounded corners */
+}
+
+/* Box 1 styles */
+.box1 h3 {
+    margin: 15px 20px;
+}
+
+.box-img1 {
+    max-height: 260px;
+    height: auto; /* Responsive image height */
+    width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.box1 span {
+    margin: 10px 20px;
+    font-size: 13px;
+    color: #007185;
+    display: inline-block; /* Keep inline with spacing */
+}
+
+.box span:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* Box 2 styles (with 4 images) */
+.box2 h3 {
+    margin: 15px 15px;
+}
+
+.item-category {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Wrap images on smaller screens */
+    gap: 10px; /* Add space between items */
+    margin: 10px 0;
+}
+
+.category-item img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.category-name {
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.box2 span {
+    color: #007185;
+    font-size: 13px;
+    margin: 15px;
+}
+
+
+
+
+/* Footer  */
+
+.nav-footer{
+    width: 100%;
+    height:48px;
+    background-color: #37475a;
+    color: white;
+    text-align: center;
+    align-content: center;
+    font-size: 0.85rem;
+}
+.nav-footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.nav-footerlinkcol {
+    height: 320px;
+    background-color: #222f3d;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.link-info{
+    display: flex;
+    justify-content:space-evenly
+}
+
+.link {
+    color: #FFFFFF;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left: 30px;
+    flex: 1; /* Makes each column flexible */
+    min-width: 100px; /* Ensures columns have a minimum width */
+}
+
+.link a {
+    color: #DDDDDD;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    display: block;
+}
+
+.link ul p {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+
+/* Responsive adjustments */
+@media (max-width: 1024px) { /* For tablets */
+    .link {
+        font-size: 14px; /* Reduce column text size */
+        margin-left: 15px;
+    }
+
+    .link a {
+        font-size: 12px; /* Reduce link size */
+    }
+
+    .link ul p {
+        font-size: 14px; /* Adjust paragraph size */
+    }
+}
+
+@media (max-width: 768px) { /* For tablets */
+    .link {
+        font-size: 12px; /* Reduce column text size */
+        margin-left: 10px;
+    }
+
+    .link a {
+        font-size: 10px; /* Reduce link size */
+    }
+
+    .link ul p {
+        font-size: 12px; /* Adjust paragraph size */
+    }
+}
+
+@media (max-width: 650px) { /* For tablets */
+    .nav-footerlinkcol {
+        flex-wrap: wrap; /* Allows wrapping */
+        height: auto;
+    }
+    .link-info {
+        flex: 1 1 50%; /* Each block takes 50% width */
+        max-width: 100%; /* Ensures full width on small screens */
+    }
+    .link {
+        font-size: 10px; /* Reduce column text size */
+        margin-left: 10px;
+    }
+
+    .link a {
+        font-size: 9px; /* Reduce link size */
+    }
+
+    .link ul p {
+        font-size: 10px; /* Adjust paragraph size */
+    }
+}
+
+@media (max-width: 480px) { /* For mobile screens */
+    .link {
+        font-size: 9px; /* Further reduce column text size */
+        margin-top: 8px; /* Adjust spacing */
+    }
+
+    .link a {
+        font-size: 7px; /* Further reduce link size */
+    }
+
+    .link ul p {
+        font-size: 9px; /* Reduce paragraph size */
+    }
+}
+
+@media (max-width: 330px) { /* For mobile screens */
+    .link {
+        font-size: 6.5px; /* Further reduce column text size */
+        margin-top: 6px; /* Adjust spacing */
+    }
+
+    .link a {
+        font-size: 4px; /* Further reduce link size */
+        
+    }
+
+    .link ul p {
+        font-size: 6px; /* Reduce paragraph size */
+    }
+}
+
+
+/* nav footer box 3 */
+
+.nav-footerline {
+    height: auto; /* Allow flexible height */
+    background-color: #222f3d;
+    border-top: 1px solid gray;
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 10px;
+    padding: 10px 20px; /* Add padding for spacing */
+}
+
+.nav-footerline img {
+    width: 100px;
+    height: 40px;
+}
+
+.nav-footerinfo {
+    display: flex;
+    justify-content: center; /* Center-align content */
+    gap: 10px;
+    margin-left: 70px;
+    padding: 0;
+}
+
+.nav-footer-lang,
+.nav-footer-currency,
+.nav-footer-region {
+    height: 40px;
+    min-width: 100px; /* Ensure consistent sizing */
+    border: 1px solid gray;
+    display: flex;
+    align-items: center; /* Vertically align content */
+    padding:0 10px;
+    border-radius: 4px;
+    flex: 1 1 auto; /* Allow flexible sizing */
+    justify-content: space-between;
+}
+
+.footer-lang,
+.footer-currency,
+.footer-region {
+    background-color: #222f3d;
+    color: white;
+    border: none;
+    font-size: 13px;
+    margin: 0;
+}
+
+/* Responsive Design */
+
+@media (max-width: 650px) {
+
+    .nav-footerline img {
+        width: 80px;
+        height: 30px;
+    }
+    .nav-footerline {
+        padding: 10px;
+    }
+
+    .nav-footer-lang,
+    .nav-footer-currency,
+    .nav-footer-region {
+        font-size: 10px; /* Smaller text for very small screens */
+        height: 25px;
+        min-width: 85px;
+    }
+
+    .footer-lang,
+    .footer-currency,
+    .footer-region {
+        font-size: 9px; /* Adjust font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-footerline img {
+        width: 50px;
+        height: 20px;
+    }
+    .nav-footerline {
+        padding: 10px;
+    }
+
+    .nav-footer-lang,
+    .nav-footer-currency,
+    .nav-footer-region {
+        font-size: 8px; /* Smaller text for very small screens */
+        height: 18px;
+        min-width: 70px;
+    }
+
+    .footer-lang,
+    .footer-currency,
+    .footer-region {
+        font-size: 7px; /* Adjust font size */
+    }
+}
+
+@media (max-width: 556px) {
+
+    .nav-footerline img {
+        width: 80px;
+        height: 30px;
+    }
+    .nav-footerline {
+        padding: 10px;
+        flex-direction: column;
+
+    }
+    .nav-footerinfo{
+        justify-content: space-evenly;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-footer-lang,
+    .nav-footer-currency,
+    .nav-footer-region {
+        font-size: 10px; /* Smaller text for very small screens */
+        height: 25px;
+        justify-content: space-evenly;
+        padding-left: 0px;
+    }
+
+    .footer-lang,
+    .footer-currency,
+    .footer-region {
+        font-size: 9px; /* Adjust font size */
+    }
+}
+/* footer panel 4 */
+
+.navfooterlast{
+    height: 80px;
+    background-color: #151d25;
+    color: #DDDDDD;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 15px;
+   
+}
+
+.navfooterlast1{
+    display: flex;
+    justify-content: center;
+    gap: 20px
+    
+} 
+
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media (max-width: 650px){
+    .navfooterlast{
+        font-size: 10px;
+    }
+    .navfooterlast .navfooterlast2{
+        font-size: 12.5px;
+        padding-top: 12px;
+    }
+
+}
+
+@media (max-width: 480px){
+    .navfooterlast{
+        font-size: 8px;
+    }
+    .navfooterlast .navfooterlast2{
+        font-size: 10px;
+        padding-top: 12px;
+    }
+    
+    
+}
+
+@media (max-width: 350px){
+    .navfooterlast{
+        font-size: 7px;
+    }
+    .navfooterlast .navfooterlast2{
+        font-size: 8px;
+        padding-top: 12px;
+    }
+}
